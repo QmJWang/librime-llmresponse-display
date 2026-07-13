@@ -1,0 +1,21 @@
+{
+  "title": "周末一起吃饭吗？",
+  "is_question": true,
+  "responses": [
+    {
+      "text": "好啊，周末有空，你想吃什么？",
+      "label": "接受-随口问",
+      "angle": "accept"
+    },
+    {
+      "text": "这周末不太方便，下周可以吗？",
+      "label": "婉拒-改约",
+      "angle": "decline_reschedule"
+    },
+    {
+      "text": "好呀，老地方见？",
+      "label": "接受-延续习惯",
+      "angle": "accept_default"
+    }
+  ]
+}

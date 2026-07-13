@@ -1,0 +1,16 @@
+patch:
+  'engine/processors/@after 0': llmresponse_processor
+  'engine/segmentors/@before 0': llmresponse_segmentor
+  'engine/translators/@before 0': llmresponse_translator
+
+  # 8 条候选一次性展示, 每条都是完整长句子。
+  menu:
+    page_size: 8
+
+  # processor/engine/translator 的共享配置固定放在 llmresponse 这个 key 下面,
+  llmresponse:
+    # 指向存放候选数据的根目录, 目录结构见 README。建议使用绝对路径。
+    output_dir: "C:/rime/llm_outputs"
+
+  llmresponse_processor:
+    trigger_key: "Control+r"
