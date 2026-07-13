@@ -1,0 +1,23 @@
+# build artifacts
+build/
+out/
+CMakeFiles/
+CMakeCache.txt
+*.obj
+*.o
+*.lib
+*.dll
+*.exe
+*.pdb
+*.ilk
+
+# editors
+.vs/
+.vscode/
+*.user
+
+# local candidate data (should never be committed — may contain real chat content)
+/candidate/
+/history/
+/chat_outputs/
+
